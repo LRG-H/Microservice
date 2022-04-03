@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/LRG-H/Microservice/tree/main/handlers"
+	"handlers"
 )
 
 func main() {

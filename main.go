@@ -5,13 +5,13 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/LRG-H/Microservice/tree/main/Handlers"
+	"github.com/LRG-H/Microservice/tree/main/handlers"
 )
 
 func main() {
 	l := log.New(os.Stdout, "product-api", log.LstdFlags)
-	hh := Handlers.NewHello()
-	gh := Handlers.NewGoodbye()
+	hh := handlers.NewHello()
+	gh := handlers.NewGoodbye()
 
 	sm := http.NewServeMux()
 	sm.Handle("/", hh)

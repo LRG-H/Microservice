@@ -1,7 +1,6 @@
 package main
 
 import (
-	"goodbye"
 	"log"
 	"net/http"
 	"os"
@@ -9,8 +8,8 @@ import (
 
 func main() {
 	l := log.New(os.Stdout, "product-api", log.LstdFlags)
-	hh := hello.NewHello()
-	gh := goodbye.NewGoodbye()
+	hh := handlers.NewHello()
+	gh := handlers.NewGoodbye()
 
 	sm := http.NewServeMux()
 	sm.Handle("/", hh)
